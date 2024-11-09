@@ -23,7 +23,16 @@ data.set_index('Month', inplace=True)
 
 test_result = adfuller(data['Sales'])
 
-print(test_result)
+## if p-value is less than 0.05 then the data is stationary
+
+# adding new column is this way 
+# data['new_sales'] = data['Sales'] - 10
+
+# drop_data = data.drop('Sales', axis=1)
+
+
+
+
 
 
 
